@@ -1,0 +1,204 @@
+.add {
+  width: 70%;
+  margin-left: max(1vw, 25px); /* leave space for sidebar */
+  margin-top: 20px;
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  color: #374151;
+  font-size: 15px;
+  animation: fadeIn 0.4s ease-in-out; /* smooth mount effect */
+}
+
+/* Form */
+.add form {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+/* Section titles */
+.add p {
+  font-weight: 600;
+  color: #111827;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+/* Image Upload */
+.add-image-upload {
+  align-items: flex-start;
+}
+
+.add-image-upload label {
+  width: 180px;
+  height: 180px;
+  border: 2px dashed #ff4d6d;
+  border-radius: 14px;
+  background: #fff8f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-image-upload label:hover {
+  border-color: #ff2e63;
+  background: #fff1f4;
+  transform: scale(1.03);
+}
+
+/* Default - before image select */
+.add-image-upload img {
+  width: 65px;
+  opacity: 0.55;
+  transition: all 0.3s ease;
+}
+
+/* After image selected - add has-preview class */
+.add-image-upload.has-preview img {
+  width: 150px;
+  opacity: 1;
+}
+
+
+.add-image-upload label:hover img {
+  opacity: 0.9;
+}
+
+/* Inputs & Textareas */
+.add input,
+.add textarea,
+.add select {
+  width: 100%;
+  padding: 13px 15px;
+  border: 1.6px solid #e5e7eb;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  background: #fafafa;
+}
+
+.add input:focus,
+.add textarea:focus,
+.add select:focus {
+  border-color: #ff4d6d;
+  outline: none;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(255, 77, 109, 0.15);
+}
+
+/* Category & Price row */
+.add-category-price {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.add-category,
+.add-price {
+  flex: 1;
+}
+
+/* Button */
+.add-btn {
+  background: linear-gradient(135deg, #ff4d6d, #ff2e63);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  padding: 14px 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: fit-content;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 12px rgba(255, 46, 99, 0.25);
+}
+
+.add-btn:hover {
+  background: linear-gradient(135deg, #ff2e63, #e02554);
+  transform: translateY(-2px) scale(1.02);
+}
+
+.add-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(255, 46, 99, 0.25);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 🔹 Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .add {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    font-size: 14px;
+  }
+
+  .add-image-upload label {
+    width: 140px;
+    height: 140px;
+  }
+
+  .add-image-upload.has-preview img {
+    width: 120px; /* thoda chhota mobile ke liye */
+  }
+
+  .add-category-price {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .add-btn {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    font-size: 15px;
+  }
+}
+
+/* 🔹 Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .add {
+    width: 95%;
+    padding: 16px;
+    margin-top: 0px;
+  }
+
+  .add-image-upload label {
+    width: 120px;
+    height: 120px;
+  }
+
+  .add-image-upload.has-preview img {
+    width: 100px;
+  }
+
+  .add input,
+  .add textarea,
+  .add select {
+    font-size: 14px;
+    padding: 11px 12px;
+  }
+
+  .add-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+

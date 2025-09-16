@@ -1,0 +1,86 @@
+.sidebar {
+  width: 240px; /* fixed sidebar width */
+  min-height: 100vh;
+  background: #ffffff;
+  border-right: 1px solid #e5e7eb;
+  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Sidebar Options Container */
+.sidebar-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+/* Each Option */
+.sidebar-option {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 18px;
+  margin: 0 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #374151; /* dark gray text */
+  font-weight: 500;
+}
+
+.sidebar-option img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.sidebar-option:hover {
+  background: #ff3773;
+  color: #ffffff; /* darker text */
+}
+
+.sidebar-option:hover img {
+  opacity: 1;
+}
+
+/* Active State */
+.sidebar-option.active {
+  background: #f91c5e; /* primary highlight color */
+  color: #fff;
+}
+
+.sidebar-option.active img {
+  filter: brightness(0) invert(1); /* makes icon white */
+}
+
+/* Responsive Sidebar */
+@media (max-width: 992px) {
+  .sidebar {
+    width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 70px; /* collapsed sidebar */
+    align-items: center;
+    padding-top: 15px;
+  }
+
+  .sidebar-option {
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .sidebar-option p {
+    display: none; /* hide text on mobile */
+  }
+}
