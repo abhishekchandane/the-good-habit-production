@@ -17,17 +17,18 @@ import add_icon_green from './add_icon_green.png';
 import remove_icon_red from './remove_icon_red.png';
 import logo_ from './logo_.png';
 
-import product_menu_1 from './Product_Menu_1.jpg';
-import product_menu_2 from './Product_Menu_2.jpg';
-import product_menu_3 from './Product_Menu_3.jpg';
-import product_menu_4 from './Product_Menu_4.jpg';
-import product_menu_5 from './Product_Menu_5.jpg';
-// import product_menu_6 from './bp1_.jpg';
-// import product_menu_7 from './bp1_2.jpg';
-// import product_menu_8 from './bp1_3.jpg';
-// import product_menu_9 from './bp1_4.jpg';
-// import product_menu_10 from './bp1_5.jpg';   
-// import product_menu_11 from './bp1_6.jpg';
+import menu_1 from './menu_1.png';
+import menu_2 from './menu_2.png';
+import menu_3 from './menu_3.png';
+import menu_4 from './menu_4.png';
+import menu_5 from './menu_5.png';
+import menu_6 from './menu_6.png';
+import menu_7 from './menu_7.png';
+import menu_8 from './menu_8.png';
+import menu_9 from './menu_9.png';
+import menu_10 from './menu_10.png';   
+import menu_11 from './menu_11.png';
+import menu_12 from './menu_12.png';
 
 
 export const assets = {
@@ -50,54 +51,58 @@ export const assets = {
 
 export const menu_list =[
     {
-        menu_name : "Product Menu Name 1",
-        menu_image : product_menu_1
+        menu_name : "Pizza",
+        menu_image : menu_1
     },
 
     {
-        menu_name : "Product Menu Name 2",
-        menu_image : product_menu_2
+        menu_name : "Biryani",
+        menu_image : menu_2
     },
 
     {
-        menu_name : "Product Menu Name 3",
-        menu_image : product_menu_3
+        menu_name : "Burger",
+        menu_image : menu_3
     },
 
     {
-        menu_name : "Product Menu Name 4",
-        menu_image : product_menu_4        
+        menu_name : "Chicken",
+        menu_image : menu_4        
     },
 
     {
-        menu_name : "Product Menu Name 5",
-        menu_image : product_menu_5         
+        menu_name : "Thali",
+        menu_image : menu_5         
     },
 
-    // {
-    //     menu_name : "Product Menu Name 6",
-    //     menu_image : product_menu_6         
-    // },
-    // {
-    //     menu_name : "Product Menu Name 7",
-    //     menu_image : product_menu_7         
-    // },
-    // {
-    //     menu_name : "Product Menu Name 8",
-    //     menu_image : product_menu_8
-    // },
-    // {
-    //     menu_name : "Product Menu Name 9",
-    //     menu_image : product_menu_9
-    // },
-    // {
-    //     menu_name : "Product Menu Name 10",
-    //     menu_image : product_menu_10
-    // },
-    // {
-    //     menu_name : "Product Menu Name 11",
-    //     menu_image : product_menu_11
-    // }
+    {
+        menu_name : "    Fride Rice  ",
+        menu_image : menu_6         
+    },
+    {
+        menu_name : "  Rolls",
+        menu_image : menu_7         
+    },
+    {
+        menu_name : "North Indian  ",
+        menu_image : menu_8
+    },
+    {
+        menu_name : "Veg Meal",
+        menu_image : menu_9
+    },
+    {
+        menu_name : "Cake",
+        menu_image : menu_10
+    },
+    {
+        menu_name : "       Panner",
+        menu_image : menu_11
+    },
+        {
+        menu_name : "       Dosa",
+        menu_image : menu_12
+    }
 
 ];
 
@@ -106,7 +111,7 @@ export const food_list = [
     {
         _id: 1,
         name: "Product Name 1",
-        image: product_menu_1,
+        image: menu_1,
         price: 10.99,
         
         description: "This is a description for Product Name 1.",
@@ -115,7 +120,7 @@ export const food_list = [
     {
         _id: 2,  
         name: "Product Name 2",
-        image: product_menu_2,
+        image: menu_2,
         price: 12.99,
         
         description: "This is a description for Product Name 2.",
@@ -124,7 +129,7 @@ export const food_list = [
     {   
         _id: 3,
         name: "Product Name 3",
-        image: product_menu_3,
+        image: menu_3,
         price: 8.99,  
         
         description: "This is a description for Product Name 3.",
@@ -133,7 +138,7 @@ export const food_list = [
     {
         _id: 4,
         name: "Product Name 4",
-        image: product_menu_4,
+        image: menu_4,
         price: 15.99,
         
         description: "This is a description for Product Name 4.",
@@ -142,7 +147,7 @@ export const food_list = [
     {       
         _id: 5,
         name: "Product Name 5",
-        image: product_menu_5,
+        image: menu_5,
         price: 9.99,    
         
         description: "This is a description for Product Name 5.",

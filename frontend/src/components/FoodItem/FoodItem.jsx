@@ -1,60 +1,58 @@
 import React, { useContext } from 'react';
 import './FoodItem.css';
-import { assets } from '../../assets/assets';
 import { StoreContext } from '../../context/StoreContext';
 
-const FoodItem = ({ id, name, price, description, image }) => { 
-  const {cartItems, addToCart, removeFromCart} = useContext(StoreContext);
+const FoodItem = ({ id, name, price, description, image, rating = 4 }) => {
+  const { cartItems, addToCart, removeFromCart } = useContext(StoreContext);
 
-return (
-  <div className="product-card">
-    {/* Image with counter floating */}
-    <div className="product-image">
-      <img
-        src={image || "https://via.placeholder.com/400x250"}
-        alt={name}
-      />
+  // Generate stars (only full)
+  const renderStars = (rating) => {
+    const stars = [];
+    for (let i = 0; i < rating; i++) {
+      stars.push(<span key={i}>⭐</span>);
+    }
+    return stars;
+  };
 
-      {/* Counter inside image (bottom-right) */}
-        { !cartItems[id] ? ( <button className="add-btn" onClick={() => addToCart(id, 1)} >+</button>) : 
-           (
-            <div className="product-counter">
-            <button className="counter-btn" onClick={() => removeFromCart(id)} > -  </button>
-            <p>{ cartItems[id] }</p>
-            <button className="counter-btn" onClick={() => addToCart(id, 1) } > + </button>
-            </div>
-            )
-      }
+  return (
+    <div className="food-item">
+      {/* Image */}
+      <div className="food-item-image-container">
+        <img
+          className="food-item-image"
+          src={image || "https://via.placeholder.com/400x250"}
+          alt={name}
+        />
 
-
-      
-    </div>
-
-    {/* Product details */}
-    <div className="product-details">
-      {/* Reviews */}
-      <div className="product-reviews">
-        <span className="stars">★★★★☆</span>
-        <span className="reviews-count"> | 33 Reviews</span>
+        {/* Floating Counter */}
+        {!cartItems[id] ? (
+          <button className="add-btn" onClick={() => addToCart(id, 1)}>+</button>
+        ) : (
+          <div className="product-counter">
+            <button className="counter-btn" onClick={() => removeFromCart(id)}>-</button>
+            <p>{cartItems[id]}</p>
+            <button className="counter-btn" onClick={() => addToCart(id, 1)}>+</button>
+          </div>
+        )}
       </div>
 
-      {/* Title */}
-      <h3 className="product-name">{name}</h3>
-      <p className="product-desc">{description}</p>
+      {/* Info */}
+      <div className="food-item-info">
+        {/* Name Center */}
+        <p className="food-item-name">{name}</p>
 
-      {/* Price */}
-      <p className="product-price">
-        <span className="old-price"> </span>
-        <span className="new-price">₹{price}</span>
-        <span className="discount"></span>
-      </p>
+        {/* Price + Rating Side by Side */}
+        <div className="food-item-price-rating">
+          <p className="food-item-price">₹{price}</p>
+          <div className="food-item-rating">{renderStars(rating)}</div>
+        </div>
 
-      {/* Add to cart */}
-      <button className="add-to-cart-btn">Add to Cart</button>
+        {/* Description */}
+        <p className="food-item-desc">{description}</p>
+      </div>
+
     </div>
-  </div>
-);
-
+  );
 };
 
 export default FoodItem;
