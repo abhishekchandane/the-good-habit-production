@@ -8,9 +8,13 @@ const StoreContextProvider = (props) => {
   const [cartItems, setCartItems] = useState({});
   const [token, setToken] = useState(""); // 🟢 token state
 
+<<<<<<< HEAD
  // const url = "http://localhost:4000";
 
    const url = "https://the-good-habit-production-backend.onrender.com";
+=======
+  const url = "https://the-good-habit-production-backend.onrender.com";
+>>>>>>> aac06706443775605065b4be9e17df5b1f770892
 
   // 🔹 Load token from localStorage when app starts
   useEffect(() => {
