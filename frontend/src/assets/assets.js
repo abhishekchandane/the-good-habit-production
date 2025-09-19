@@ -32,6 +32,12 @@ import menu_12 from './menu_12.png';
 
 import pizza_ from './pizza_.png';
 
+import bir_2 from './bir_2.jpg';
+import bir_3 from './bir_3.jpg';
+import bir_4 from './bir_4.jpg';
+import bir_5 from './bir_5.jpg';
+import bir_6 from './bir_6.png';
+
 
 export const assets = {
     logo,
@@ -79,7 +85,7 @@ export const menu_list =[
     },
 
     {
-        menu_name : "    Fride Rice  ",
+        menu_name : "Fride Rice  ",
         menu_image : menu_6         
     },
     {
@@ -99,11 +105,11 @@ export const menu_list =[
         menu_image : menu_10
     },
     {
-        menu_name : "       Panner",
+        menu_name : "Panner",
         menu_image : menu_11
     },
         {
-        menu_name : "       Dosa",
+        menu_name : "Dosa",
         menu_image : menu_12
     }
 
@@ -113,22 +119,22 @@ export const menu_list =[
 export const food_list = [
     {
         _id: 1,
-        name: "Product Name 1",
+        name: "Pizza 1",
         image: pizza_,
-        price: 10.99,
-        
+        price: 200,
         description: "This is a description for Product Name 1.",
-        category: "Category 1"
+        category: "Pizza"
     },
+
     {
         _id: 2,  
-        name: "Product Name 2",
+        name: "Biryani 2",
         image: menu_2,
         price: 12.99,
-        
-        description: "This is a description for Product Name 2.",
+        description: "This is a description for Biryani 2.",
         category: "Category 2"
     },
+
     {   
         _id: 3,
         name: "Product Name 3",
@@ -155,6 +161,68 @@ export const food_list = [
         
         description: "This is a description for Product Name 5.",
         category: "Category 2"
-    }       
+    },
+
+    {
+        _id: 6,
+        name: "Pizza 2",
+        image: menu_1,
+        price: 300,
+        description: "This is  Pizza 2.",
+        category: "Pizza"
+    }, 
+
+    {
+        _id: 7,  
+        name: "Biryani 3",
+        image: bir_2,
+        price: 12.99,
+        description: "This is a description for Biryani 3.",
+        category: "Biryani"
+    },
+
+    {
+        _id: 8,  
+        name: "Biryani 4",
+        image: bir_3,
+        price: 12.99,
+        description: "This is a description for Biryani 2.",
+        category: "Biryani"
+    },
+
+    {
+        _id: 9,  
+        name: "Biryani 2",
+        image: bir_4,
+        price: 12.99,
+        description: "This is a description for Biryani 2.",
+        category: "Biryani"
+    },
+
+    {
+        _id: 10,  
+        name: "Biryani 2",
+        image: bir_5,
+        price: 12.99,
+        description: "This is a description for Biryani 2.",
+        category: "Biryani"
+    },
+
+    {
+        _id: 11,  
+        name: "Biryani 2",
+        image: bir_5,
+        price: 12.99,
+        description: "This is a description for Biryani 2.",
+        category: "Biryani"
+    },
+    {
+        _id: 12,  
+        name: "Biryani 2",
+        image: bir_6,
+        price: 12.99,
+        description: "This is a description for Biryani 2.",
+        category: "Biryani"
+    },
 
 ];
