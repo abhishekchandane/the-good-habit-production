@@ -92,8 +92,8 @@
     min-height: 09px;
     background-color: rgb(255, 255, 255);
     border-radius: 50%;
-    top: 15px;
-    right: 81px;
+    top: 11px;
+    right: 100px;
 }
 
 .navbar-right .icon:hover {
@@ -238,7 +238,7 @@
     background-color: rgb(255, 255, 255);
     border-radius: 50%;
     top: 7px;
-    right: 45px;
+    right: 55px;
   }
 
  

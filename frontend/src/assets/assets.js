@@ -30,6 +30,8 @@ import menu_10 from './menu_10.png';
 import menu_11 from './menu_11.png';
 import menu_12 from './menu_12.png';
 
+import pizza_ from './pizza_.png';
+
 
 export const assets = {
     logo,
@@ -45,7 +47,8 @@ export const assets = {
     add_icon_white,
     add_icon_green,
     remove_icon_red,
-    logo_
+    logo_,
+    pizza_
 };
 
 
@@ -111,7 +114,7 @@ export const food_list = [
     {
         _id: 1,
         name: "Product Name 1",
-        image: menu_1,
+        image: pizza_,
         price: 10.99,
         
         description: "This is a description for Product Name 1.",
