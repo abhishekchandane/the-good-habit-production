@@ -84,12 +84,12 @@
   cursor: pointer;
   filter: brightness(0) invert(1);
   transition: 0.3s; 
-  position: relative; /* 👈 add this so .dot aligns properly */
+ 
 }
 
 
 .navbar-basket-icon .dot{
-    position: absolute;
+    position: relative; /* 👈 add this so .dot aligns properly */
     min-width: 09px;
     min-height: 09px;
     background-color: rgb(255, 255, 255);
