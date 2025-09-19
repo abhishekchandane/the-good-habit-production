@@ -10,6 +10,8 @@ import ProductSlides from '../../components/ProductsSlide/ProductSlide'
 const Home = () => {
 
 
+  
+
   const [category, setCategory] = useState('All')
 
   return (

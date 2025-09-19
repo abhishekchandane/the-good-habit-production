@@ -14,9 +14,12 @@ const Header = () => {
           <p className="header-subtitle">
             Stay consistent with workouts, meditation, and mindful eating. <br />
             A small step today makes a big change tomorrow
-          </p>
+          </p>        
           <button className="header-btn">Order Now</button>
         </div>
+
+
+        
 
         {/* Right Side Content */}
         <div className="header-right">

@@ -12,7 +12,7 @@ const blogs = [
     link: "#",
   },
   {
-    id: 2,
+    id: 2, 
     image: "/images/blogs/b1.jpg",
     category: "Taste",
     readTime: "8 Min Read",

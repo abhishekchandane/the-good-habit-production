@@ -18,6 +18,8 @@ const Navbar = ({ setShowLogin }) => {
     navigate("/"); 
   }
 
+  
+
   return (
     <>
       {/* 🔹 Offer Strip */}

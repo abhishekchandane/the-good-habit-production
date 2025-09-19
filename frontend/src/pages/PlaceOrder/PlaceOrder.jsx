@@ -9,6 +9,8 @@ const PlaceOrder = () => {
 
   const {getTotalCartAmount} = useContext(StoreContext);
 
+
+  
   return (
     <div className='place-order-container'>
 
