@@ -11,7 +11,6 @@ import Footer from './components/Footer/Footer'
 const App = () => {
 
 
-  
   const [showLogin, setShowLogin] = useState(false);
 
   return (

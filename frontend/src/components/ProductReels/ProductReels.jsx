@@ -10,9 +10,6 @@ const videos = [
     discount: "15% Off",
     views: "5.2K Views",
   },
-
-
-  
   {
     id: 2,
     video: "/videos/video2.mp4",

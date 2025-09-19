@@ -15,7 +15,7 @@ export default function Footer() {
             <li>Chocolate Peanut Butter Wafer</li>
             <li>Strawberry Wafer</li>
             <li>Cheese Wafer</li>
-            <li>Variety Box</li>                 
+            <li>Variety Box</li>
           </ul>
         </div>
 

@@ -13,7 +13,7 @@ const FoodItem = ({ id, name, price, description, image, rating = 4 }) => {
     }
     return stars;
   };
-                               
+
   return (
     <div className="food-item">
       {/* Image */}

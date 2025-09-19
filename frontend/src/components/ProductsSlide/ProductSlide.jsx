@@ -30,8 +30,6 @@ const ProductSlides = () => {
     sliderRef.current.scrollBy({ left: 300, behavior: "smooth" });
   };
 
-  
-
   return (
     <div className="product-slides">
       <h2 className="section-title">Our Popular Products</h2>
