@@ -3,18 +3,23 @@ import { Link, useNavigate } from "react-router-dom";
 import "./Navbar2.css";
 import { assets } from "../../assets/assets";
 import { StoreContext } from "../../context/StoreContext";
+import useOutsideClick from "../../hooks/useOutsideClick"; // 👈 import hook
 
 const Navbar = ({ setShowLogin }) => {
   const [menu, setMenu] = useState("home");
   const [showMenu, setShowMenu] = useState(false); // 👈 toggle state
+  const [showDropdown, setShowDropdown] = useState(false);
 
   const { getTotalCartAmount, token, setToken } = useContext(StoreContext);
 
-  // 🔹 Profile Dropdown Logic
-  const [showDropdown, setShowDropdown] = useState(false);
-  const dropdownRef = useRef(null);
-
   const navigate = useNavigate();
+ 
+  // --------------- Extra Logic--------------
+  // 👇 ref dropdown ke liye
+  const dropdownRef = useRef(null);
+  // 👇 hook use karo
+  useOutsideClick(dropdownRef, () => setShowDropdown(false));
+  // --------------- Extra Logic--------------
 
   const logOut = () => {
     localStorage.removeItem("token");
@@ -125,8 +130,8 @@ const Navbar = ({ setShowLogin }) => {
           ) : (
             <div
               className="nav-bar-profile"
-              ref={dropdownRef}
-              onClick={() => setShowDropdown((prev) => !prev)}
+              onClick={() => setShowDropdown(!showDropdown)}
+              ref={dropdownRef} // 👈 ref yaha lagao
             >
               <img src={assets.profile_image} alt="" />
               <ul

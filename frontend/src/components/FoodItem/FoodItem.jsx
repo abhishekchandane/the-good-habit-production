@@ -3,7 +3,7 @@ import './FoodItem.css';
 import { StoreContext } from '../../context/StoreContext';
 
 const FoodItem = ({ id, name, price, description, image, rating = 4 }) => {
-  const { cartItems, addToCart, removeFromCart } = useContext(StoreContext);
+  const { cartItems, addToCart, removeFromCart, url } = useContext(StoreContext);
 
   // Generate stars (only full)
   const renderStars = (rating) => {
@@ -20,7 +20,7 @@ const FoodItem = ({ id, name, price, description, image, rating = 4 }) => {
       <div className="food-item-image-container">
         <img
           className="food-item-image"
-          src={image || "https://via.placeholder.com/400x250"}
+          src={url+"/images/"+image || "https://picsum.photos/seed/picsum/200/300"}
           alt={name}
         />
 
