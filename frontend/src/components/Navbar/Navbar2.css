@@ -84,6 +84,7 @@
   cursor: pointer;
   filter: brightness(0) invert(1);
   transition: 0.3s; 
+  position: relative;
 }
 
 
